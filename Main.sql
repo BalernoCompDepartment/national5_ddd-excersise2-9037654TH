@@ -1,11 +1,13 @@
 /* do not change the following two lines! */
-.header on
-.mode column
+
 /* do not change the above two lines! */
 
-
+SELECT * FROM Customer
+WHERE street LIKE "%Paisley Street%";
 /* Task One: Search the database to display the full name (forename and surname) of the customer with the surname 'Rice'.*/
-
+SELECT forename, surname
+FROM customer
+WHERE surname = "Rice";
 /* Task Two: Search the database to display the full name and town of the only customer who lives in Inverkip.*/
 
 /* Task Three: Search the database to display the surname, package and town of all the customers who are on the large package.*/
